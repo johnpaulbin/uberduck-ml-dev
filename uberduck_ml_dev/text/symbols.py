@@ -121,6 +121,21 @@ symbols_ukrainian = (
 
 UKRAINIAN_SYMBOLS = "ukrainian"
 
+##
+
+_nilagabbocasujapapabbo = "nilägabbocasujapapäbboNILÄGABBOCASUJAPAPÄBBO"
+
+symbols_nilagabbocasujapapabbo = (
+    [_pad]
+    + list(_special_nvidia_taco2)
+    + list(_punctuation_nvidia_taco2)
+    + list(_nilagabbocasujapapabbo)
+    + _arpabet
+)
+
+NILAGABBOCASUJAPAPABBO_SYMBOLS = "nilagabbocasujapapabbo"
+
+##
 
 # Export all symbols:
 symbols = (
@@ -155,6 +170,7 @@ SYMBOL_SETS = {
     SPANISH_SYMBOLS: symbols_spanish,
     RUSSIAN_SYMBOLS: symbols_russian,
     UKRAINIAN_SYMBOLS: symbols_ukrainian,
+    NILAGABBOCASUJAPAPABBO_SYMBOLS: symbols_nilagabbocasujapapabbo,
 }
 
 # Cell
@@ -173,6 +189,7 @@ symbol_to_id = {
     SPANISH_SYMBOLS: {s: i for i, s in enumerate(SYMBOL_SETS[SPANISH_SYMBOLS])},
     RUSSIAN_SYMBOLS: {s: i for i, s in enumerate(SYMBOL_SETS[RUSSIAN_SYMBOLS])},
     UKRAINIAN_SYMBOLS: {s: i for i, s in enumerate(SYMBOL_SETS[UKRAINIAN_SYMBOLS])},
+    NILAGABBOCASUJAPAPABBO_SYMBOLS: {s: i for i, s in enumerate(SYMBOL_SETS[NILAGABBOCASUJAPAPABBO_SYMBOLS])},
 }
 id_to_symbol = {
     DEFAULT_SYMBOLS: {i: s for i, s in enumerate(SYMBOL_SETS[DEFAULT_SYMBOLS])},
@@ -187,6 +204,7 @@ id_to_symbol = {
     SPANISH_SYMBOLS: {i: s for i, s in enumerate(SYMBOL_SETS[SPANISH_SYMBOLS])},
     RUSSIAN_SYMBOLS: {i: s for i, s in enumerate(SYMBOL_SETS[RUSSIAN_SYMBOLS])},
     UKRAINIAN_SYMBOLS: {i: s for i, s in enumerate(SYMBOL_SETS[UKRAINIAN_SYMBOLS])},
+    NILAGABBOCASUJAPAPABBO_SYMBOLS: {i: s for i, s in enumerate(SYMBOL_SETS[NILAGABBOCASUJAPAPABBO_SYMBOLS])},
 }
 
 curly_re = re.compile(r"(.*?)\{(.+?)\}(.*)")
